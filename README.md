@@ -12,7 +12,7 @@ Example:
     '/scripts/main.js',
     '/scripts/second/**/*.js',
     '/scripts/**/*.js'
-  ], './');
+  ], __dirname);
   // Returns 
   //[
   //    '/scripts/main.js',
