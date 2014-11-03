@@ -1,0 +1,24 @@
+{
+  "name": "node-glob-resolve",
+  "version": "0.0.1",
+  "description": "Takes a single glob, or an array of globs and returns the paths to the resolved files relative to a folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kennethlynne/node-glob-resolve.git"
+  },
+  "keywords": [
+    "gulp",
+    "glob",
+    "path"
+  ],
+  "author": "Kenneth Lynne <kenneth.lynne@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kennethlynne/node-glob-resolve/issues"
+  },
+  "homepage": "https://github.com/kennethlynne/node-glob-resolve"
+}
