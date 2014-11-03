@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/kennethlynne/node-glob-resolve/issues"
   },
-  "homepage": "https://github.com/kennethlynne/node-glob-resolve"
+  "homepage": "https://github.com/kennethlynne/node-glob-resolve",
+  "dependencies": {
+    "glob": "^4.0.6"
+  }
 }
