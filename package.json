@@ -1,6 +1,6 @@
 {
   "name": "node-glob-resolve",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Takes a single glob, or an array of globs and returns the paths to the resolved files relative to a folder.",
   "main": "index.js",
   "scripts": {
