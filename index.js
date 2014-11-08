@@ -18,11 +18,14 @@ module.exports = function (patterns, options) {
       var result, negated = pattern.substr(0, 1) === '!';
 
       new Glob(negated ? pattern.substr(1) : pattern, options, function (err, matches) {
+        if (err) {
+          console.log(err);
+        }
         result = matches;
       });
 
       return {
-        matches: result,
+        matches: result || [],
         negated: negated
       };
     })
