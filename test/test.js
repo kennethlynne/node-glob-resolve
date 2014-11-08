@@ -12,6 +12,7 @@ var _fs = mockFs.fs({
   }
 });
 
+//TODO: Fix mock fs injection and remove file fixtures
 var globResolve = proxyquire('./../index', {'graceful-fs': _fs, '@global': true});
 
 describe('globResolve', function () {
