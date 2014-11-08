@@ -1,6 +1,6 @@
 {
   "name": "node-glob-resolve",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Takes a single glob, or an array of globs and returns the paths to the resolved files relative to a folder.",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/kennethlynne/node-glob-resolve",
   "dependencies": {
-    "glob": "^4.0.6"
+    "chai": "^1.9.2",
+    "glob": "^4.0.6",
+    "mocha": "^2.0.1",
+    "mock-fs": "^2.3.2",
+    "proxyquire": "^1.0.1"
   }
 }

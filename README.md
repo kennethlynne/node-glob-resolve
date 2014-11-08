@@ -23,5 +23,5 @@ Example:
 ```
 
 ## TODO
- * Add tests
+ * Document
  * Add support for async
