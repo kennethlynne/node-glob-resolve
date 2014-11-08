@@ -57,17 +57,17 @@ describe('globResolve', function () {
     var result;
 
     before(function () {
-      result = globResolve(['test/fixtures/fileA.*', 'test/fixtures/**/*']);
+      result = globResolve(['test/fixtures/fileA.*', 'test/fixtures/**/*','test/fixtures/fileA.*']);
     });
 
-    it('should return hits', function () {
+    it('should return hits and reject duplicates', function () {
       expect(result).to.eql([
         'test/fixtures/fileA.js',
         'test/fixtures/fileB.js'
       ]);
     });
 
-    xdescribe('when passed negative globs', function () {
+    describe('when passed negative globs', function () {
 
       var result;
 

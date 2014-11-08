@@ -15,20 +15,33 @@ module.exports = function (patterns, options) {
 
   return patterns
     .map(function (pattern) {
-      var result;
+      var result, negated = pattern.substr(0, 1) === '!';
 
-      new Glob(pattern, options, function (err, matches) {
+      new Glob(negated ? pattern.substr(1) : pattern, options, function (err, matches) {
         result = matches;
       });
 
-      return result;
+      return {
+        matches: result,
+        negated: negated
+      };
     })
-    .reduce(function (val, matches) {
-      matches.forEach(function (match) {
-        if (val.indexOf(match) < 0) {
-          val.push(match);
+    .reduce(function (val, result) {
+
+      result.matches.forEach(function (match) {
+        var index = val.indexOf(match);
+
+        if (result.negated) {
+          val.splice(index, 1);
         }
+        else {
+          if (index < 0) {
+            val.push(match);
+          }
+        }
+
       });
+
       return val;
     }, []);
 };
