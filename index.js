@@ -32,7 +32,9 @@ module.exports = function (patterns, options) {
         var index = val.indexOf(match);
 
         if (result.negated) {
-          val.splice(index, 1);
+          if (index >= 0) {
+            val.splice(index, 1);
+          }
         }
         else {
           if (index < 0) {
