@@ -6,4 +6,3 @@ Especially useful for using packages that does not support globs with for exampl
 
 ## TODO
  * Document
- * Add tests
