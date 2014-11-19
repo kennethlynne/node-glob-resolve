@@ -1,3 +1,5 @@
+# Use https://www.npmjs.org/package/globby instead 
+
 node-glob-resolve
 =================
 
